@@ -7,13 +7,9 @@ Stream Data
 
 A stream is defined as an ordered sequence of values where the order is determined by a primary index. The primary index has a uniqueness constraint and as such only one value can exist for a particular index value within a stream. 
 A stream can be defined to contain complex data value but all values within a stream must conform to a single type definition. An example type definition is shown below.
-Stream Name	 	 	 
-SensorData			 
- 	Type Name	 	 
- 	SensorValue		 
- 	 	Field Name	Field Type
- 	 	◊TimeId	DateTime
- 	 	Measurement	Double
+
+.. image:: images/QiDataBehaviorsSimpleType.PNG
+
 In this example the TimeId field is denoted as the primary index and as such a stream of SensorValues may only one SensorValue for each unique DateTime value.
 
 ***************
@@ -76,14 +72,8 @@ Complex Values
 ==============
 In the previous example we considered a simple type definition with just two fields, an index field and a scalar value field. This example was useful for demonstrating basic stream behaviors but in practice type definitions can be much more complex.
 In the following example we will consider a type definition with multiple scalar fields besides the primary index as follows.
-Stream Name	 	 	 
-SensorData			 
- 	Type Name	 	 
- 	SensorValue&Status		 
- 	 	Field Name	Field Type
- 	 	◊TimeId	DateTime
-		Measurement	Double
- 	 	Status	Int32
+
+.. image:: images/QiDataBehaviorsComplexType.PNG
 
 We will again examine behaviors by considering a stream with a set of distinct SensorValue & Status values as follows:
 
