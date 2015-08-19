@@ -18,6 +18,9 @@ Welcome to qi-docs's documentation!
 * This is a bulleted list.
 * It has two items, the second
   item uses two lines.
+* *This is emphaticly* said
+* This line has **strong emphasis** on it
+* Inline ``code sample maybe?``
 
 1. This is a numbered list.
 2. It has two items too.
