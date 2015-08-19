@@ -32,12 +32,14 @@ TimeId	Measurement
 01-Jan-2010 12:40 PM	2
 01-Jan-2010 1:00 PM	12
 
+********
 Discrete
 ********
 In the case of a discrete stream it is assumed that there are no values at index locations which have not been explicitly added to the stream. A plot of the stream data is shown below.
  
 If we considered a data access call to retrieve a SensorValue at an index of 01-Jan-2010 12:50 PM, in the case of a discrete stream the value does not exist.
 
+*******************
 Stepwise Continuous
 *******************
 In the case of stepwise continuous stream it is assumed that the value a stream remains the same for increasing index values until another distinct value is encountered.
@@ -47,6 +49,7 @@ We should note that there is also a variant to this behavior where the value of 
  
 In this case the value of the Measurement field of the SensorValue at an index of 01-Jan-2010 12:50 PM will be 12. We will refer to this variant in future as stepwise continuous (trailing edge) and the former as stepwise continuous (leading edge).
 
+**********
 Continuous
 **********
 For a continuous streams we assume that there is a valid value for every possible index value. The actual value between distinct values depends on the algorithm being employed. The plot below demonstrates how the how stream would behave if a linear interpolation method was employed. In this case the value of the Measurement field of the SensorValue at an index of 01-Jan-2010 12:50 PM will be 7.
@@ -73,14 +76,17 @@ TimeId	Measurement	Status
 01-Jan-2010 12:40 PM	2	0
 01-Jan-2010 1:00 PM	12	1
 
+********
 Discrete
 ********
 In the case of a discrete stream the behavior is same as in the case of simple type in that between distinct values, no value exists.
 
+*******************
 Stepwise Continuous
 *******************
 For both stepwise continuous (trailing edge) and stepwise continuous (leading edge) the behavior is again the same as with a simple type because no interpretation of the data in the type fields is required to return a value.
 
+**********
 Continuous
 **********
 In the case of continuous stream there are multiple fields to which an algorithm could to be applied in order to return a SensorValue&Status at an index value. In practice this isn’t always desirable and distinct behaviors typically need to be applied to each of the fields.
