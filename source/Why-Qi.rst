@@ -22,8 +22,8 @@ When consumed as a service by users, it can be colloquially referred to as a "Di
 OSIsoft's customer base will not be exposed to the Qi storage service directly. Existing and new markets will be offered a set of compelling, modern services around Qi's technology to create a familiar "distributed historian as a service" offering.
 
 Additionally, the Qi storage service will be reused as the basis of two classes of products:
-•	Entirely new SaaS offerings
-•	Transition from / Extensions of legacy products
+*	Entirely new SaaS offerings
+*	Transition from / Extensions of legacy products
 
 These will be designed as horizontal scenarios that enable customers to take advantage of other storage and analytical services available in Microsoft Azure.
 
@@ -61,9 +61,9 @@ The reality of their deployment is somewhat driven by "security requirements", h
 
 In order to enable this, the Qi storage pattern requires two main features:
 
-•	Buffering / spooling data during disconnected states
-•	Local data access in case of disaster or localized network trauma
-•	Zero configuration / deployment / maintenance of the services themselves
+*	Buffering / spooling data during disconnected states
+*	Local data access in case of disaster or localized network trauma
+*	Zero configuration / deployment / maintenance of the services themselves
 
 Microsoft Azure has some planned features that would assist in implementation of these scenarios, and the Qi storage pattern incorporates specific engineering to enable these patterns.
 
@@ -170,5 +170,5 @@ OSIsoft sees its path forward in a distributed world leveraging the strengths of
 
 
 
-Confidential | OSIsoft, LLC | © 2014
-via OSIsoft Research & The Ministry of Innovation
+``Confidential | OSIsoft, LLC | © 2014
+via OSIsoft Research & The Ministry of Innovation``
