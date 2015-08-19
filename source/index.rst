@@ -106,8 +106,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
       
-   samples
-	dotNetClient
+   samples/index
+   samples/dotNetClient
 
 
 
