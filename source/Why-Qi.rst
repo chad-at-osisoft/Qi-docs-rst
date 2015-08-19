@@ -1,4 +1,4 @@
-WHY QI
+Why Qi
 ======
 The Qi Storage Service Business Case
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
