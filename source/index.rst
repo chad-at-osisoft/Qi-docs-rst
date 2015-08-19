@@ -54,6 +54,11 @@ next term
 This is a heading
 =================
 
+Trying a code sample::
+	QiHttpClientFactory<IDataServer> factory = new QiHttpClientFactory<IDataServer>();
+	IDataServer server = factory.CreateChannel(new Uri(uri));
+And it's over.
+
 This is a normal text paragraph. The next paragraph is a code sample::
 	QiHttpClientFactory<IDataServer> factory = new QiHttpClientFactory<IDataServer>();
 	IDataServer server = factory.CreateChannel(new Uri(uri));
