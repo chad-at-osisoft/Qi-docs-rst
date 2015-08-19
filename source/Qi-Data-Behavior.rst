@@ -23,20 +23,7 @@ The value of a stream at any particular index value is determined by the stream 
 
 Simple Values
 =============
-We will examine these behaviors by considering a stream defined with a type definition of SensorValue. To this stream we will add the following distinct values;
-
-=====	=====  
-TimeId	Measurement
-===== 	=====  
-01-Jan-2010 12:00 PM	0
-01-Jan-2010 12:10 PM	4
-01-Jan-2010 12:20 PM	2
-01-Jan-2010 12:30 PM	6
-01-Jan-2010 12:40 PM	2
-01-Jan-2010 1:00 PM	12
-=====	=====
-
-or like this??
+We will examine these behaviors by considering a stream defined with a type definition of SensorValue. To this stream we will add the following distinct values:
 
 +------------------------+------------+
 | Time Id                | Measurement|
@@ -91,14 +78,24 @@ SensorData
 		Measurement	Double
  	 	Status	Int32
 
-We will again examine behaviors by considering a stream with a set of distinct SensorValue & Status values as follows;
-TimeId	Measurement	Status
-01-Jan-2010 12:00 PM	0	1
-01-Jan-2010 12:10 PM	4	1
-01-Jan-2010 12:20 PM	2	1
-01-Jan-2010 12:30 PM	6	0
-01-Jan-2010 12:40 PM	2	0
-01-Jan-2010 1:00 PM	12	1
+We will again examine behaviors by considering a stream with a set of distinct SensorValue & Status values as follows:
+
+
++------------------------+------------+------------+
+| Time Id                | Measurement| Status     |
++========================+============+============+
+| 01-Jan-2010 12:00 PM   | 0          | 1          |
++------------------------+------------+------------+
+| 01-Jan-2010 12:10 PM   | 4          | 1          |
++------------------------+------------+------------+
+| 01-Jan-2010 12:20 PM   | 2          | 1          |
++------------------------+------------+------------+
+| 01-Jan-2010 12:30 PM   | 6          | 0          |
++------------------------+------------+------------+
+| 01-Jan-2010 12:40 PM   | 2          | 0          |
++------------------------+------------+------------+
+| 01-Jan-2010 1:0 0 PM   | 12         | 1          |
++------------------------+------------+------------+
 
 ********
 Discrete
