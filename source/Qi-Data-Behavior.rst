@@ -47,23 +47,30 @@ We will examine these behaviors by considering a stream defined with a type defi
 Discrete
 ********
 In the case of a discrete stream it is assumed that there are no values at index locations which have not been explicitly added to the stream. A plot of the stream data is shown below.
- 
+
+.. image:: images/QiDataBehaviorsSimpleDiscrete.PNG
+
 If we considered a data access call to retrieve a SensorValue at an index of 01-Jan-2010 12:50 PM, in the case of a discrete stream the value does not exist.
 
 *******************
 Stepwise Continuous
 *******************
 In the case of stepwise continuous stream it is assumed that the value a stream remains the same for increasing index values until another distinct value is encountered.
+
+.. image:: images/QiDataBehaviorsSimpleStepwiseContinuous1.PNG
  
 Again if we considered a data access call to retrieve a SensorValue at an index of 01-Jan-2010 12:50 PM, this time the Measurement field will have a value of 2.
 We should note that there is also a variant to this behavior where the value of the stream immediately transitions to the value of next distinct value.
  
+.. image:: images/QiDataBehaviorsSimpleStepwiseContinuous2.PNG
 In this case the value of the Measurement field of the SensorValue at an index of 01-Jan-2010 12:50 PM will be 12. We will refer to this variant in future as stepwise continuous (trailing edge) and the former as stepwise continuous (leading edge).
 
 **********
 Continuous
 **********
 For a continuous streams we assume that there is a valid value for every possible index value. The actual value between distinct values depends on the algorithm being employed. The plot below demonstrates how the how stream would behave if a linear interpolation method was employed. In this case the value of the Measurement field of the SensorValue at an index of 01-Jan-2010 12:50 PM will be 7.
+
+.. image:: images/QiDataBehaviorsSimpleContinuous.PNG
  
 Complex Values
 ==============
