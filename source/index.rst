@@ -4,6 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to qi-docs's documentation!
+====================================
 
 .. This is a comment.
 
@@ -20,6 +21,8 @@ Welcome to qi-docs's documentation!
 
 1. This is a numbered list.
 2. It has two items too.
+
+Paragraph will reset the numbered lists
 
 #. This is a numbered list.
 #. It has two items too.
@@ -77,6 +80,7 @@ This is a normal text paragraph again.
 | body row 2             | ...        | ...      |          |
 +------------------------+------------+----------+----------+
 
+Another way to create a table:
 
 =====  =====  =======
 A      B      A and B
