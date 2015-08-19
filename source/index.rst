@@ -106,6 +106,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
       
+   Why-Qi
+   Qi-Data-Behavior
    samples/index
    samples/dotNetClient
 
